@@ -1,0 +1,449 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<fmiModelDescription OPENMODELICAHOME="/usr" cmt_numberOfBooleanAlgebraicVariables="NYBOOL:   number of alg. bool variables,                      OMC" cmt_numberOfBooleanAliasVariables="NABOOL:   number of alias bool variables,                     OMC" cmt_numberOfBooleanParameters="NPBOOL:   number of bool parameters,                          OMC" cmt_numberOfContinuousStates="NX:       number of states,                                   FMI" cmt_numberOfEventIndicators="NG:       number of zero crossings,                           FMI" cmt_numberOfExternalObjects="NEXT:     number of external objects,                         OMC" cmt_numberOfFunctions="NFUNC:    number of functions used by the simulation,         OMC" cmt_numberOfInputVariables="NI:       number of inputvar on topmodel,                     OMC" cmt_numberOfIntegerAlgebraicVariables="NYINT:    number of alg. int variables,                       OMC" cmt_numberOfIntegerAliasVariables="NAINT:    number of alias int variables,                      OMC" cmt_numberOfIntegerParameters="NPINT:    number of int parameters,                           OMC" cmt_numberOfOutputVariables="NO:       number of outputvar on topmodel,                    OMC" cmt_numberOfRealAlgebraicAliasVariables="NA:       number of alias variables,                          OMC" cmt_numberOfRealAlgebraicVariables="NY:       number of real variables,                           OMC" cmt_numberOfRealParameters="NP:       number of parameters,                               OMC" cmt_numberOfStringAlgebraicVariables="NYSTR:    number of alg. string variables,                    OMC" cmt_numberOfStringAliasVariables="NASTR:    number of alias string variables,                   OMC" cmt_numberOfStringParameters="NPSTR:    number of string parameters,                        OMC" cmt_numberOfTimeEvents="NG_SAM:   number of zero crossings that are samples,          OMC" description="" fmiVersion="1.0" generationDateAndTime="2019-05-14T12:34:14Z" generationTool="OpenModelica Compiler OpenModelica 1.13.0" guid="{462a4a24-0c92-429c-9f7e-1d76aeed7e1a}" modelIdentifier="SatTrak_SatTest" modelName="SatTrak.SatTest" numberOfBooleanAlgebraicVariables="4" numberOfBooleanAliasVariables="0" numberOfBooleanParameters="0" numberOfContinuousStates="4" numberOfEventIndicators="3" numberOfExternalObjects="0" numberOfFunctions="10" numberOfInputVariables="0" numberOfIntegerAlgebraicVariables="5" numberOfIntegerAliasVariables="0" numberOfIntegerParameters="0" numberOfOutputVariables="0" numberOfRealAlgebraicAliasVariables="32" numberOfRealAlgebraicVariables="81" numberOfRealParameters="14" numberOfStringAlgebraicVariables="0" numberOfStringAliasVariables="0" numberOfStringParameters="0" numberOfTimeEvents="0" variableNamingConvention="structured">
+
+
+  
+  <DefaultExperiment outputFormat="mat" solver="dassl" startTime="0" stepSize="5" stopTime="1800.0" tolerance="1e-06" variableFilter=".*" />
+
+  
+  <ModelVariables>
+
+  <ScalarVariable alias="noAlias" causality="internal" classIndex="0" classType="rSta" endColumn="0" endLine="0" fileName="" fileWritable="true" hideResult="false" isDiscrete="false" isProtected="false" isValueChangeable="false" name="$STATESET1.x" startColumn="0" startLine="0" valueReference="1000" variability="continuous">
+    <Real fixed="false" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable alias="noAlias" causality="internal" classIndex="1" classType="rSta" description="Semi-major axis (km)" endColumn="34" endLine="20" fileName="/home/arvin/Documents/Uni_4/ENG4350/4Tracking/OMdirectory/SatTrak.mo" fileWritable="true" hideResult="false" isDiscrete="false" isProtected="false" isValueChangeable="true" name="SatTestP1.a" startColumn="5" startLine="20" valueReference="1001" variability="continuous">
+    <Real fixed="false" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable alias="noAlias" causality="internal" classIndex="2" classType="rSta" description="Argument of Perigee (deg)" endColumn="44" endLine="23" fileName="/home/arvin/Documents/Uni_4/ENG4350/4Tracking/OMdirectory/SatTrak.mo" fileWritable="true" hideResult="false" isDiscrete="false" isProtected="false" isValueChangeable="true" name="SatTestP1.argper" startColumn="5" startLine="23" valueReference="1002" variability="continuous">
+    <Real fixed="false" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable alias="noAlias" causality="internal" classIndex="3" classType="rSta" description="Right Ascension Ascending Node (deg)" endColumn="53" endLine="22" fileName="/home/arvin/Documents/Uni_4/ENG4350/4Tracking/OMdirectory/SatTrak.mo" fileWritable="true" hideResult="false" isDiscrete="false" isProtected="false" isValueChangeable="true" name="SatTestP1.raan" startColumn="5" startLine="22" valueReference="1003" variability="continuous">
+    <Real fixed="false" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable alias="noAlias" causality="internal" classIndex="0" classType="rDer" endColumn="0" endLine="0" fileName="" fileWritable="true" hideResult="false" isDiscrete="false" isProtected="false" isValueChangeable="false" name="der($STATESET1.x)" startColumn="0" startLine="0" valueReference="1004" variability="continuous">
+    <Real fixed="false" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable alias="noAlias" causality="internal" classIndex="1" classType="rDer" description="der(Semi-major axis (km))" endColumn="34" endLine="20" fileName="/home/arvin/Documents/Uni_4/ENG4350/4Tracking/OMdirectory/SatTrak.mo" fileWritable="true" hideResult="false" isDiscrete="false" isProtected="false" isValueChangeable="false" name="der(SatTestP1.a)" startColumn="5" startLine="20" valueReference="1005" variability="continuous">
+    <Real fixed="false" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable alias="noAlias" causality="internal" classIndex="2" classType="rDer" description="der(Argument of Perigee (deg))" endColumn="44" endLine="23" fileName="/home/arvin/Documents/Uni_4/ENG4350/4Tracking/OMdirectory/SatTrak.mo" fileWritable="true" hideResult="false" isDiscrete="false" isProtected="false" isValueChangeable="false" name="der(SatTestP1.argper)" startColumn="5" startLine="23" valueReference="1006" variability="continuous">
+    <Real fixed="false" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable alias="noAlias" causality="internal" classIndex="3" classType="rDer" description="der(Right Ascension Ascending Node (deg))" endColumn="53" endLine="22" fileName="/home/arvin/Documents/Uni_4/ENG4350/4Tracking/OMdirectory/SatTrak.mo" fileWritable="true" hideResult="false" isDiscrete="false" isProtected="false" isValueChangeable="false" name="der(SatTestP1.raan)" startColumn="5" startLine="22" valueReference="1007" variability="continuous">
+    <Real fixed="false" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable alias="noAlias" causality="internal" classIndex="0" classType="rAlg" description="Eccentric Anomaly (deg)" endColumn="37" endLine="69" fileName="/home/arvin/Documents/Uni_4/ENG4350/4Tracking/OMdirectory/SatTrak.mo" fileWritable="true" hideResult="false" isDiscrete="false" isProtected="false" isValueChangeable="false" name="der(E)" startColumn="5" startLine="69" valueReference="1008" variability="continuous">
+    <Real fixed="false" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable alias="noAlias" causality="internal" classIndex="1" classType="rAlg" description="Mean Anomaly (deg)" endColumn="32" endLine="16" fileName="/home/arvin/Documents/Uni_4/ENG4350/4Tracking/OMdirectory/SatTrak.mo" fileWritable="true" hideResult="false" isDiscrete="false" isProtected="false" isValueChangeable="false" name="der(SatTestP1.M)" startColumn="5" startLine="16" valueReference="1009" variability="continuous">
+    <Real fixed="false" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable alias="noAlias" causality="internal" classIndex="2" classType="rAlg" description="Mean Motion (rev/d)" endColumn="33" endLine="17" fileName="/home/arvin/Documents/Uni_4/ENG4350/4Tracking/OMdirectory/SatTrak.mo" fileWritable="true" hideResult="false" isDiscrete="false" isProtected="false" isValueChangeable="false" name="der(SatTestP1.N)" startColumn="5" startLine="17" valueReference="1010" variability="continuous">
+    <Real fixed="false" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable alias="noAlias" causality="internal" classIndex="3" classType="rAlg" description="Satellite posn in pf coords (km)" endColumn="56" endLine="26" fileName="/home/arvin/Documents/Uni_4/ENG4350/4Tracking/OMdirectory/SatTrak.mo" fileWritable="true" hideResult="false" isDiscrete="false" isProtected="false" isValueChangeable="false" name="der(SatTestP1.p_sat_pf[1])" startColumn="5" startLine="26" valueReference="1011" variability="continuous">
+    <Real fixed="false" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable alias="noAlias" causality="internal" classIndex="4" classType="rAlg" description="Satellite posn in pf coords (km)" endColumn="56" endLine="26" fileName="/home/arvin/Documents/Uni_4/ENG4350/4Tracking/OMdirectory/SatTrak.mo" fileWritable="true" hideResult="false" isDiscrete="false" isProtected="false" isValueChangeable="false" name="der(SatTestP1.p_sat_pf[2])" startColumn="5" startLine="26" valueReference="1012" variability="continuous">
+    <Real fixed="false" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable alias="noAlias" causality="internal" classIndex="5" classType="rAlg" description="Satellite radial distance (km)" endColumn="44" endLine="75" fileName="/home/arvin/Documents/Uni_4/ENG4350/4Tracking/OMdirectory/SatTrak.mo" fileWritable="true" hideResult="false" isDiscrete="false" isProtected="false" isValueChangeable="false" name="der(r)" startColumn="5" startLine="75" valueReference="1013" variability="continuous">
+    <Real fixed="false" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable alias="noAlias" causality="internal" classIndex="6" classType="rAlg" description="true anomaly (deg)" endColumn="36" endLine="70" fileName="/home/arvin/Documents/Uni_4/ENG4350/4Tracking/OMdirectory/SatTrak.mo" fileWritable="true" hideResult="false" isDiscrete="false" isProtected="false" isValueChangeable="false" name="der(theta)" startColumn="5" startLine="70" valueReference="1014" variability="continuous">
+    <Real fixed="false" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable alias="noAlias" causality="none" classIndex="7" classType="rAlg" endColumn="0" endLine="0" fileName="" fileWritable="true" hideResult="true" isDiscrete="false" isProtected="true" isValueChangeable="false" name="$TMP$VAR$31$0ATAN$TAN" startColumn="0" startLine="0" valueReference="1015" variability="continuous">
+    <Real fixed="false" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable alias="noAlias" causality="none" classIndex="8" classType="rAlg" endColumn="0" endLine="0" fileName="" fileWritable="true" hideResult="true" isDiscrete="false" isProtected="true" isValueChangeable="false" name="$TMP$VAR$31$0PREX$TAN" startColumn="0" startLine="0" valueReference="1016" variability="continuous">
+    <Real fixed="false" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable alias="noAlias" causality="none" classIndex="9" classType="rAlg" endColumn="0" endLine="0" fileName="" fileWritable="true" hideResult="true" isDiscrete="false" isProtected="true" isValueChangeable="false" name="$TMP$VAR$31$0Y$TAN" startColumn="0" startLine="0" valueReference="1017" variability="continuous">
+    <Real fixed="false" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable alias="noAlias" causality="internal" classIndex="10" classType="rAlg" endColumn="0" endLine="0" fileName="" fileWritable="true" hideResult="true" isDiscrete="false" isProtected="true" isValueChangeable="false" name="$cse3" startColumn="0" startLine="0" valueReference="1018" variability="continuous">
+    <Real fixed="false" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable alias="noAlias" causality="internal" classIndex="11" classType="rAlg" endColumn="0" endLine="0" fileName="" fileWritable="true" hideResult="true" isDiscrete="false" isProtected="true" isValueChangeable="false" name="$cse4" startColumn="0" startLine="0" valueReference="1019" variability="continuous">
+    <Real fixed="false" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable alias="noAlias" causality="internal" classIndex="12" classType="rAlg" endColumn="0" endLine="0" fileName="" fileWritable="true" hideResult="true" isDiscrete="false" isProtected="true" isValueChangeable="false" name="$cse5" startColumn="0" startLine="0" valueReference="1020" variability="continuous">
+    <Real fixed="false" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable alias="noAlias" causality="internal" classIndex="13" classType="rAlg" endColumn="0" endLine="0" fileName="" fileWritable="true" hideResult="true" isDiscrete="false" isProtected="true" isValueChangeable="false" name="$cse6" startColumn="0" startLine="0" valueReference="1021" variability="continuous">
+    <Real fixed="false" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable alias="noAlias" causality="internal" classIndex="14" classType="rAlg" endColumn="0" endLine="0" fileName="" fileWritable="true" hideResult="true" isDiscrete="false" isProtected="true" isValueChangeable="false" name="$cse7" startColumn="0" startLine="0" valueReference="1022" variability="continuous">
+    <Real fixed="false" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable alias="noAlias" causality="internal" classIndex="15" classType="rAlg" endColumn="0" endLine="0" fileName="" fileWritable="true" hideResult="true" isDiscrete="false" isProtected="true" isValueChangeable="false" name="$cse8" startColumn="0" startLine="0" valueReference="1023" variability="continuous">
+    <Real fixed="false" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable alias="noAlias" causality="internal" classIndex="16" classType="rAlg" endColumn="0" endLine="0" fileName="" fileWritable="true" hideResult="true" isDiscrete="false" isProtected="true" isValueChangeable="false" name="$cse9" startColumn="0" startLine="0" valueReference="1024" variability="continuous">
+    <Real fixed="false" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable alias="noAlias" causality="internal" classIndex="17" classType="rAlg" description="Eccentric Anomaly (deg)" endColumn="37" endLine="69" fileName="/home/arvin/Documents/Uni_4/ENG4350/4Tracking/OMdirectory/SatTrak.mo" fileWritable="true" hideResult="false" isDiscrete="false" isProtected="false" isValueChangeable="false" name="E" startColumn="5" startLine="69" valueReference="1025" variability="continuous">
+    <Real fixed="false" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable alias="noAlias" causality="internal" classIndex="18" classType="rAlg" description="Maximum Elevation for Station (deg)" endColumn="58" endLine="98" fileName="/home/arvin/Documents/Uni_4/ENG4350/4Tracking/OMdirectory/SatTrak.mo" fileWritable="true" hideResult="false" isDiscrete="false" isProtected="false" isValueChangeable="false" name="Elmax" startColumn="5" startLine="98" valueReference="1026" variability="continuous">
+    <Real fixed="true" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable alias="noAlias" causality="internal" classIndex="19" classType="rAlg" description="Minimum Elevation For Station (deg)" endColumn="57" endLine="97" fileName="/home/arvin/Documents/Uni_4/ENG4350/4Tracking/OMdirectory/SatTrak.mo" fileWritable="true" hideResult="false" isDiscrete="false" isProtected="false" isValueChangeable="false" name="Elmin" startColumn="5" startLine="97" valueReference="1027" variability="continuous">
+    <Real fixed="true" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable alias="noAlias" causality="internal" classIndex="20" classType="rAlg" description="GMST angle (deg)" endColumn="33" endLine="82" fileName="/home/arvin/Documents/Uni_4/ENG4350/4Tracking/OMdirectory/SatTrak.mo" fileWritable="true" hideResult="false" isDiscrete="false" isProtected="false" isValueChangeable="false" name="GMST" startColumn="5" startLine="82" valueReference="1028" variability="continuous">
+    <Real fixed="false" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable alias="noAlias" causality="internal" classIndex="21" classType="rAlg" description="Mean Anomaly (deg)" endColumn="32" endLine="67" fileName="/home/arvin/Documents/Uni_4/ENG4350/4Tracking/OMdirectory/SatTrak.mo" fileWritable="true" hideResult="false" isDiscrete="false" isProtected="false" isValueChangeable="false" name="M" startColumn="5" startLine="67" valueReference="1029" variability="continuous">
+    <Real fixed="false" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable alias="noAlias" causality="internal" classIndex="22" classType="rAlg" description="range to satellite (km)" endColumn="37" endLine="96" fileName="/home/arvin/Documents/Uni_4/ENG4350/4Tracking/OMdirectory/SatTrak.mo" fileWritable="true" hideResult="false" isDiscrete="false" isProtected="false" isValueChangeable="false" name="R" startColumn="5" startLine="96" valueReference="1030" variability="continuous">
+    <Real fixed="false" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable alias="noAlias" causality="internal" classIndex="23" classType="rAlg" description="Mean Anomaly (deg)" endColumn="32" endLine="16" fileName="/home/arvin/Documents/Uni_4/ENG4350/4Tracking/OMdirectory/SatTrak.mo" fileWritable="true" hideResult="false" isDiscrete="false" isProtected="false" isValueChangeable="false" name="SatTestP1.M" startColumn="5" startLine="16" valueReference="1031" variability="continuous">
+    <Real fixed="false" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable alias="noAlias" causality="internal" classIndex="24" classType="rAlg" description="Mean Motion (rev/d)" endColumn="33" endLine="17" fileName="/home/arvin/Documents/Uni_4/ENG4350/4Tracking/OMdirectory/SatTrak.mo" fileWritable="true" hideResult="false" isDiscrete="false" isProtected="false" isValueChangeable="false" name="SatTestP1.N" startColumn="5" startLine="17" valueReference="1032" variability="continuous">
+    <Real fixed="false" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable alias="noAlias" causality="internal" classIndex="25" classType="rAlg" description="Semi-major axis at Epoch" endColumn="96" endLine="21" fileName="/home/arvin/Documents/Uni_4/ENG4350/4Tracking/OMdirectory/SatTrak.mo" fileWritable="true" hideResult="false" isDiscrete="false" isProtected="false" isValueChangeable="false" name="SatTestP1.a0" startColumn="5" startLine="21" valueReference="1033" variability="continuous">
+    <Real fixed="true" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable alias="noAlias" causality="internal" classIndex="26" classType="rAlg" description="Satellite posn in pf coords (km)" endColumn="56" endLine="26" fileName="/home/arvin/Documents/Uni_4/ENG4350/4Tracking/OMdirectory/SatTrak.mo" fileWritable="true" hideResult="false" isDiscrete="false" isProtected="false" isValueChangeable="false" name="SatTestP1.p_sat_pf[1]" startColumn="5" startLine="26" valueReference="1034" variability="continuous">
+    <Real fixed="false" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable alias="noAlias" causality="internal" classIndex="27" classType="rAlg" description="Satellite posn in pf coords (km)" endColumn="56" endLine="26" fileName="/home/arvin/Documents/Uni_4/ENG4350/4Tracking/OMdirectory/SatTrak.mo" fileWritable="true" hideResult="false" isDiscrete="false" isProtected="false" isValueChangeable="false" name="SatTestP1.p_sat_pf[2]" startColumn="5" startLine="26" valueReference="1035" variability="continuous">
+    <Real fixed="false" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable alias="noAlias" causality="internal" classIndex="28" classType="rAlg" description="Satellite posn in pf coords (km)" endColumn="56" endLine="26" fileName="/home/arvin/Documents/Uni_4/ENG4350/4Tracking/OMdirectory/SatTrak.mo" fileWritable="true" hideResult="false" isDiscrete="false" isProtected="false" isValueChangeable="false" name="SatTestP1.p_sat_pf[3]" startColumn="5" startLine="26" valueReference="1036" variability="continuous">
+    <Real fixed="true" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable alias="noAlias" causality="internal" classIndex="29" classType="rAlg" description="TODO: fill in the angles here" endColumn="51" endLine="25" fileName="/home/arvin/Documents/Uni_4/ENG4350/4Tracking/OMdirectory/SatTrak.mo" fileWritable="true" hideResult="false" isDiscrete="false" isProtected="false" isValueChangeable="false" name="SatTestP1.rotang[2]" startColumn="5" startLine="25" valueReference="1037" variability="continuous">
+    <Real fixed="true" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable alias="noAlias" causality="internal" classIndex="30" classType="rAlg" description="Ellipsoidal Radius of Curvature in the meridian (km)" endColumn="70" endLine="165" fileName="/home/arvin/Documents/Uni_4/ENG4350/4Tracking/OMdirectory/SatTrak.mo" fileWritable="true" hideResult="false" isDiscrete="false" isProtected="false" isValueChangeable="false" name="SatTestP2.N_phi" startColumn="5" startLine="165" valueReference="1038" variability="continuous">
+    <Real fixed="true" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable alias="noAlias" causality="internal" classIndex="31" classType="rAlg" description="sequence of rotation angles" endColumn="46" endLine="168" fileName="/home/arvin/Documents/Uni_4/ENG4350/4Tracking/OMdirectory/SatTrak.mo" fileWritable="true" hideResult="false" isDiscrete="false" isProtected="false" isValueChangeable="false" name="SatTestP2.ang[1]" startColumn="5" startLine="168" valueReference="1039" variability="continuous">
+    <Real fixed="true" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable alias="noAlias" causality="internal" classIndex="32" classType="rAlg" description="sequence of rotation angles" endColumn="46" endLine="168" fileName="/home/arvin/Documents/Uni_4/ENG4350/4Tracking/OMdirectory/SatTrak.mo" fileWritable="true" hideResult="false" isDiscrete="false" isProtected="false" isValueChangeable="false" name="SatTestP2.ang[2]" startColumn="5" startLine="168" valueReference="1040" variability="continuous">
+    <Real fixed="true" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable alias="noAlias" causality="internal" classIndex="33" classType="rAlg" description="sequence of rotation angles" endColumn="46" endLine="168" fileName="/home/arvin/Documents/Uni_4/ENG4350/4Tracking/OMdirectory/SatTrak.mo" fileWritable="true" hideResult="false" isDiscrete="false" isProtected="false" isValueChangeable="false" name="SatTestP2.ang[3]" startColumn="5" startLine="168" valueReference="1041" variability="continuous">
+    <Real fixed="true" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable alias="noAlias" causality="internal" classIndex="34" classType="rAlg" description="Transform matrix from ECF to topo" endColumn="54" endLine="90" fileName="/home/arvin/Documents/Uni_4/ENG4350/4Tracking/OMdirectory/SatTrak.mo" fileWritable="true" hideResult="false" isDiscrete="false" isProtected="false" isValueChangeable="false" name="TM[1,1]" startColumn="5" startLine="90" valueReference="1042" variability="continuous">
+    <Real fixed="true" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable alias="noAlias" causality="internal" classIndex="35" classType="rAlg" description="Transform matrix from ECF to topo" endColumn="54" endLine="90" fileName="/home/arvin/Documents/Uni_4/ENG4350/4Tracking/OMdirectory/SatTrak.mo" fileWritable="true" hideResult="false" isDiscrete="false" isProtected="false" isValueChangeable="false" name="TM[1,2]" startColumn="5" startLine="90" valueReference="1043" variability="continuous">
+    <Real fixed="true" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable alias="noAlias" causality="internal" classIndex="36" classType="rAlg" description="Transform matrix from ECF to topo" endColumn="54" endLine="90" fileName="/home/arvin/Documents/Uni_4/ENG4350/4Tracking/OMdirectory/SatTrak.mo" fileWritable="true" hideResult="false" isDiscrete="false" isProtected="false" isValueChangeable="false" name="TM[1,3]" startColumn="5" startLine="90" valueReference="1044" variability="continuous">
+    <Real fixed="true" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable alias="noAlias" causality="internal" classIndex="37" classType="rAlg" description="Transform matrix from ECF to topo" endColumn="54" endLine="90" fileName="/home/arvin/Documents/Uni_4/ENG4350/4Tracking/OMdirectory/SatTrak.mo" fileWritable="true" hideResult="false" isDiscrete="false" isProtected="false" isValueChangeable="false" name="TM[2,1]" startColumn="5" startLine="90" valueReference="1045" variability="continuous">
+    <Real fixed="true" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable alias="noAlias" causality="internal" classIndex="38" classType="rAlg" description="Transform matrix from ECF to topo" endColumn="54" endLine="90" fileName="/home/arvin/Documents/Uni_4/ENG4350/4Tracking/OMdirectory/SatTrak.mo" fileWritable="true" hideResult="false" isDiscrete="false" isProtected="false" isValueChangeable="false" name="TM[2,2]" startColumn="5" startLine="90" valueReference="1046" variability="continuous">
+    <Real fixed="true" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable alias="noAlias" causality="internal" classIndex="39" classType="rAlg" description="Transform matrix from ECF to topo" endColumn="54" endLine="90" fileName="/home/arvin/Documents/Uni_4/ENG4350/4Tracking/OMdirectory/SatTrak.mo" fileWritable="true" hideResult="false" isDiscrete="false" isProtected="false" isValueChangeable="false" name="TM[2,3]" startColumn="5" startLine="90" valueReference="1047" variability="continuous">
+    <Real fixed="true" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable alias="noAlias" causality="internal" classIndex="40" classType="rAlg" description="Transform matrix from ECF to topo" endColumn="54" endLine="90" fileName="/home/arvin/Documents/Uni_4/ENG4350/4Tracking/OMdirectory/SatTrak.mo" fileWritable="true" hideResult="false" isDiscrete="false" isProtected="false" isValueChangeable="false" name="TM[3,1]" startColumn="5" startLine="90" valueReference="1048" variability="continuous">
+    <Real fixed="true" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable alias="noAlias" causality="internal" classIndex="41" classType="rAlg" description="Transform matrix from ECF to topo" endColumn="54" endLine="90" fileName="/home/arvin/Documents/Uni_4/ENG4350/4Tracking/OMdirectory/SatTrak.mo" fileWritable="true" hideResult="false" isDiscrete="false" isProtected="false" isValueChangeable="false" name="TM[3,2]" startColumn="5" startLine="90" valueReference="1049" variability="continuous">
+    <Real fixed="true" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable alias="noAlias" causality="internal" classIndex="42" classType="rAlg" description="Transform matrix from ECF to topo" endColumn="54" endLine="90" fileName="/home/arvin/Documents/Uni_4/ENG4350/4Tracking/OMdirectory/SatTrak.mo" fileWritable="true" hideResult="false" isDiscrete="false" isProtected="false" isValueChangeable="false" name="TM[3,3]" startColumn="5" startLine="90" valueReference="1050" variability="continuous">
+    <Real fixed="true" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable alias="noAlias" causality="internal" classIndex="43" classType="rAlg" endColumn="15" endLine="93" fileName="/home/arvin/Documents/Uni_4/ENG4350/4Tracking/OMdirectory/SatTrak.mo" fileWritable="true" hideResult="false" isDiscrete="false" isProtected="false" isValueChangeable="false" name="azdot" startColumn="5" startLine="93" valueReference="1051" variability="continuous">
+    <Real fixed="false" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable alias="noAlias" causality="internal" classIndex="44" classType="rAlg" endColumn="17" endLine="91" fileName="/home/arvin/Documents/Uni_4/ENG4350/4Tracking/OMdirectory/SatTrak.mo" fileWritable="true" hideResult="false" isDiscrete="false" isProtected="false" isValueChangeable="false" name="azimuth" startColumn="5" startLine="91" valueReference="1052" variability="continuous">
+    <Real fixed="false" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable alias="noAlias" causality="internal" classIndex="45" classType="rAlg" endColumn="15" endLine="94" fileName="/home/arvin/Documents/Uni_4/ENG4350/4Tracking/OMdirectory/SatTrak.mo" fileWritable="true" hideResult="false" isDiscrete="false" isProtected="false" isValueChangeable="false" name="eldot" startColumn="5" startLine="94" valueReference="1053" variability="continuous">
+    <Real fixed="false" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable alias="noAlias" causality="internal" classIndex="46" classType="rAlg" endColumn="19" endLine="92" fileName="/home/arvin/Documents/Uni_4/ENG4350/4Tracking/OMdirectory/SatTrak.mo" fileWritable="true" hideResult="false" isDiscrete="false" isProtected="false" isValueChangeable="false" name="elevation" startColumn="5" startLine="92" valueReference="1054" variability="continuous">
+    <Real fixed="false" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable alias="noAlias" causality="internal" classIndex="47" classType="rAlg" description="day fraction at simulation time" endColumn="49" endLine="89" fileName="/home/arvin/Documents/Uni_4/ENG4350/4Tracking/OMdirectory/SatTrak.mo" fileWritable="true" hideResult="false" isDiscrete="false" isProtected="false" isValueChangeable="false" name="hours" startColumn="5" startLine="89" valueReference="1055" variability="continuous">
+    <Real fixed="false" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable alias="noAlias" causality="internal" classIndex="48" classType="rAlg" description="Position vector in ECF coordinates (km)" endColumn="64" endLine="83" fileName="/home/arvin/Documents/Uni_4/ENG4350/4Tracking/OMdirectory/SatTrak.mo" fileWritable="true" hideResult="false" isDiscrete="false" isProtected="false" isValueChangeable="false" name="p_sat_ECF[1]" startColumn="5" startLine="83" valueReference="1056" variability="continuous">
+    <Real fixed="false" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable alias="noAlias" causality="internal" classIndex="49" classType="rAlg" description="Position vector in ECF coordinates (km)" endColumn="64" endLine="83" fileName="/home/arvin/Documents/Uni_4/ENG4350/4Tracking/OMdirectory/SatTrak.mo" fileWritable="true" hideResult="false" isDiscrete="false" isProtected="false" isValueChangeable="false" name="p_sat_ECF[2]" startColumn="5" startLine="83" valueReference="1057" variability="continuous">
+    <Real fixed="false" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable alias="noAlias" causality="internal" classIndex="50" classType="rAlg" description="Position vector in ECF coordinates (km)" endColumn="64" endLine="83" fileName="/home/arvin/Documents/Uni_4/ENG4350/4Tracking/OMdirectory/SatTrak.mo" fileWritable="true" hideResult="false" isDiscrete="false" isProtected="false" isValueChangeable="false" name="p_sat_ECF[3]" startColumn="5" startLine="83" valueReference="1058" variability="continuous">
+    <Real fixed="false" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable alias="noAlias" causality="internal" classIndex="51" classType="rAlg" description="Satellite position in ECI coordinates (km)" endColumn="67" endLine="80" fileName="/home/arvin/Documents/Uni_4/ENG4350/4Tracking/OMdirectory/SatTrak.mo" fileWritable="true" hideResult="false" isDiscrete="false" isProtected="false" isValueChangeable="false" name="p_sat_ECI[1]" startColumn="5" startLine="80" valueReference="1059" variability="continuous">
+    <Real fixed="false" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable alias="noAlias" causality="internal" classIndex="52" classType="rAlg" description="Satellite position in ECI coordinates (km)" endColumn="67" endLine="80" fileName="/home/arvin/Documents/Uni_4/ENG4350/4Tracking/OMdirectory/SatTrak.mo" fileWritable="true" hideResult="false" isDiscrete="false" isProtected="false" isValueChangeable="false" name="p_sat_ECI[2]" startColumn="5" startLine="80" valueReference="1060" variability="continuous">
+    <Real fixed="false" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable alias="noAlias" causality="internal" classIndex="53" classType="rAlg" description="Satellite position in ECI coordinates (km)" endColumn="67" endLine="80" fileName="/home/arvin/Documents/Uni_4/ENG4350/4Tracking/OMdirectory/SatTrak.mo" fileWritable="true" hideResult="false" isDiscrete="false" isProtected="false" isValueChangeable="false" name="p_sat_ECI[3]" startColumn="5" startLine="80" valueReference="1061" variability="continuous">
+    <Real fixed="false" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable alias="noAlias" causality="internal" classIndex="54" classType="rAlg" description="position of satellite relative to station (km)" endColumn="72" endLine="85" fileName="/home/arvin/Documents/Uni_4/ENG4350/4Tracking/OMdirectory/SatTrak.mo" fileWritable="true" hideResult="false" isDiscrete="false" isProtected="false" isValueChangeable="false" name="p_sat_topo[1]" startColumn="5" startLine="85" valueReference="1062" variability="continuous">
+    <Real fixed="false" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable alias="noAlias" causality="internal" classIndex="55" classType="rAlg" description="position of satellite relative to station (km)" endColumn="72" endLine="85" fileName="/home/arvin/Documents/Uni_4/ENG4350/4Tracking/OMdirectory/SatTrak.mo" fileWritable="true" hideResult="false" isDiscrete="false" isProtected="false" isValueChangeable="false" name="p_sat_topo[2]" startColumn="5" startLine="85" valueReference="1063" variability="continuous">
+    <Real fixed="false" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable alias="noAlias" causality="internal" classIndex="56" classType="rAlg" description="position of satellite relative to station (km)" endColumn="72" endLine="85" fileName="/home/arvin/Documents/Uni_4/ENG4350/4Tracking/OMdirectory/SatTrak.mo" fileWritable="true" hideResult="false" isDiscrete="false" isProtected="false" isValueChangeable="false" name="p_sat_topo[3]" startColumn="5" startLine="85" valueReference="1064" variability="continuous">
+    <Real fixed="false" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable alias="noAlias" causality="internal" classIndex="57" classType="rAlg" description="Station coordinates in ECF (km)" endColumn="56" endLine="88" fileName="/home/arvin/Documents/Uni_4/ENG4350/4Tracking/OMdirectory/SatTrak.mo" fileWritable="true" hideResult="false" isDiscrete="false" isProtected="false" isValueChangeable="false" name="p_stn_ECF[1]" startColumn="5" startLine="88" valueReference="1065" variability="continuous">
+    <Real fixed="true" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable alias="noAlias" causality="internal" classIndex="58" classType="rAlg" description="Station coordinates in ECF (km)" endColumn="56" endLine="88" fileName="/home/arvin/Documents/Uni_4/ENG4350/4Tracking/OMdirectory/SatTrak.mo" fileWritable="true" hideResult="false" isDiscrete="false" isProtected="false" isValueChangeable="false" name="p_stn_ECF[2]" startColumn="5" startLine="88" valueReference="1066" variability="continuous">
+    <Real fixed="true" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable alias="noAlias" causality="internal" classIndex="59" classType="rAlg" description="Station coordinates in ECF (km)" endColumn="56" endLine="88" fileName="/home/arvin/Documents/Uni_4/ENG4350/4Tracking/OMdirectory/SatTrak.mo" fileWritable="true" hideResult="false" isDiscrete="false" isProtected="false" isValueChangeable="false" name="p_stn_ECF[3]" startColumn="5" startLine="88" valueReference="1067" variability="continuous">
+    <Real fixed="true" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable alias="noAlias" causality="internal" classIndex="60" classType="rAlg" description="Station coordinates in topocentric (km)" endColumn="65" endLine="87" fileName="/home/arvin/Documents/Uni_4/ENG4350/4Tracking/OMdirectory/SatTrak.mo" fileWritable="true" hideResult="false" isDiscrete="false" isProtected="false" isValueChangeable="false" name="p_stn_topo[1]" startColumn="5" startLine="87" valueReference="1068" variability="continuous">
+    <Real fixed="true" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable alias="noAlias" causality="internal" classIndex="61" classType="rAlg" description="Station coordinates in topocentric (km)" endColumn="65" endLine="87" fileName="/home/arvin/Documents/Uni_4/ENG4350/4Tracking/OMdirectory/SatTrak.mo" fileWritable="true" hideResult="false" isDiscrete="false" isProtected="false" isValueChangeable="false" name="p_stn_topo[2]" startColumn="5" startLine="87" valueReference="1069" variability="continuous">
+    <Real fixed="true" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable alias="noAlias" causality="internal" classIndex="62" classType="rAlg" description="Station coordinates in topocentric (km)" endColumn="65" endLine="87" fileName="/home/arvin/Documents/Uni_4/ENG4350/4Tracking/OMdirectory/SatTrak.mo" fileWritable="true" hideResult="false" isDiscrete="false" isProtected="false" isValueChangeable="false" name="p_stn_topo[3]" startColumn="5" startLine="87" valueReference="1070" variability="continuous">
+    <Real fixed="true" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable alias="noAlias" causality="internal" classIndex="63" classType="rAlg" description="Satellite radial distance (km)" endColumn="44" endLine="75" fileName="/home/arvin/Documents/Uni_4/ENG4350/4Tracking/OMdirectory/SatTrak.mo" fileWritable="true" hideResult="false" isDiscrete="false" isProtected="false" isValueChangeable="false" name="r" startColumn="5" startLine="75" valueReference="1071" variability="continuous">
+    <Real fixed="false" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable alias="noAlias" causality="internal" classIndex="64" classType="rAlg" description="Rotation Angles" endColumn="37" endLine="78" fileName="/home/arvin/Documents/Uni_4/ENG4350/4Tracking/OMdirectory/SatTrak.mo" fileWritable="true" hideResult="false" isDiscrete="false" isProtected="false" isValueChangeable="false" name="rotang[1]" startColumn="5" startLine="78" valueReference="1072" variability="continuous">
+    <Real fixed="false" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable alias="noAlias" causality="internal" classIndex="65" classType="rAlg" description="Rotation Angles" endColumn="37" endLine="78" fileName="/home/arvin/Documents/Uni_4/ENG4350/4Tracking/OMdirectory/SatTrak.mo" fileWritable="true" hideResult="false" isDiscrete="false" isProtected="false" isValueChangeable="false" name="rotang[3]" startColumn="5" startLine="78" valueReference="1073" variability="continuous">
+    <Real fixed="false" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable alias="noAlias" causality="internal" classIndex="66" classType="rAlg" description="true anomaly (deg)" endColumn="36" endLine="70" fileName="/home/arvin/Documents/Uni_4/ENG4350/4Tracking/OMdirectory/SatTrak.mo" fileWritable="true" hideResult="false" isDiscrete="false" isProtected="false" isValueChangeable="false" name="theta" startColumn="5" startLine="70" valueReference="1074" variability="continuous">
+    <Real fixed="false" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable alias="noAlias" causality="internal" classIndex="67" classType="rAlg" description="Relative Velocity vector in ECF coordinates (km/s)" endColumn="75" endLine="84" fileName="/home/arvin/Documents/Uni_4/ENG4350/4Tracking/OMdirectory/SatTrak.mo" fileWritable="true" hideResult="false" isDiscrete="false" isProtected="false" isValueChangeable="false" name="v_sat_ECF[1]" startColumn="5" startLine="84" valueReference="1075" variability="continuous">
+    <Real fixed="false" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable alias="noAlias" causality="internal" classIndex="68" classType="rAlg" description="Relative Velocity vector in ECF coordinates (km/s)" endColumn="75" endLine="84" fileName="/home/arvin/Documents/Uni_4/ENG4350/4Tracking/OMdirectory/SatTrak.mo" fileWritable="true" hideResult="false" isDiscrete="false" isProtected="false" isValueChangeable="false" name="v_sat_ECF[2]" startColumn="5" startLine="84" valueReference="1076" variability="continuous">
+    <Real fixed="false" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable alias="noAlias" causality="internal" classIndex="69" classType="rAlg" description="Relative Velocity vector in ECF coordinates (km/s)" endColumn="75" endLine="84" fileName="/home/arvin/Documents/Uni_4/ENG4350/4Tracking/OMdirectory/SatTrak.mo" fileWritable="true" hideResult="false" isDiscrete="false" isProtected="false" isValueChangeable="false" name="v_sat_ECF[3]" startColumn="5" startLine="84" valueReference="1077" variability="continuous">
+    <Real fixed="false" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable alias="noAlias" causality="internal" classIndex="70" classType="rAlg" description="Satellite velocity in ECI coordinates (km/s)" endColumn="69" endLine="81" fileName="/home/arvin/Documents/Uni_4/ENG4350/4Tracking/OMdirectory/SatTrak.mo" fileWritable="true" hideResult="false" isDiscrete="false" isProtected="false" isValueChangeable="false" name="v_sat_ECI[1]" startColumn="5" startLine="81" valueReference="1078" variability="continuous">
+    <Real fixed="false" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable alias="noAlias" causality="internal" classIndex="71" classType="rAlg" description="Satellite velocity in ECI coordinates (km/s)" endColumn="69" endLine="81" fileName="/home/arvin/Documents/Uni_4/ENG4350/4Tracking/OMdirectory/SatTrak.mo" fileWritable="true" hideResult="false" isDiscrete="false" isProtected="false" isValueChangeable="false" name="v_sat_ECI[2]" startColumn="5" startLine="81" valueReference="1079" variability="continuous">
+    <Real fixed="false" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable alias="noAlias" causality="internal" classIndex="72" classType="rAlg" description="Satellite velocity in ECI coordinates (km/s)" endColumn="69" endLine="81" fileName="/home/arvin/Documents/Uni_4/ENG4350/4Tracking/OMdirectory/SatTrak.mo" fileWritable="true" hideResult="false" isDiscrete="false" isProtected="false" isValueChangeable="false" name="v_sat_ECI[3]" startColumn="5" startLine="81" valueReference="1080" variability="continuous">
+    <Real fixed="false" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable alias="noAlias" causality="internal" classIndex="73" classType="rAlg" description="Satellite vel in pf coords (km/s)" endColumn="57" endLine="77" fileName="/home/arvin/Documents/Uni_4/ENG4350/4Tracking/OMdirectory/SatTrak.mo" fileWritable="true" hideResult="false" isDiscrete="false" isProtected="false" isValueChangeable="false" name="v_sat_pf[1]" startColumn="5" startLine="77" valueReference="1081" variability="continuous">
+    <Real fixed="false" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable alias="noAlias" causality="internal" classIndex="74" classType="rAlg" description="Satellite vel in pf coords (km/s)" endColumn="57" endLine="77" fileName="/home/arvin/Documents/Uni_4/ENG4350/4Tracking/OMdirectory/SatTrak.mo" fileWritable="true" hideResult="false" isDiscrete="false" isProtected="false" isValueChangeable="false" name="v_sat_pf[2]" startColumn="5" startLine="77" valueReference="1082" variability="continuous">
+    <Real fixed="false" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable alias="noAlias" causality="internal" classIndex="75" classType="rAlg" description="Satellite vel in pf coords (km/s)" endColumn="57" endLine="77" fileName="/home/arvin/Documents/Uni_4/ENG4350/4Tracking/OMdirectory/SatTrak.mo" fileWritable="true" hideResult="false" isDiscrete="false" isProtected="false" isValueChangeable="false" name="v_sat_pf[3]" startColumn="5" startLine="77" valueReference="1083" variability="continuous">
+    <Real fixed="true" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable alias="noAlias" causality="internal" classIndex="76" classType="rAlg" description="velocity of satellite relative to sration (km/s)" endColumn="74" endLine="86" fileName="/home/arvin/Documents/Uni_4/ENG4350/4Tracking/OMdirectory/SatTrak.mo" fileWritable="true" hideResult="false" isDiscrete="false" isProtected="false" isValueChangeable="false" name="v_sat_topo[1]" startColumn="5" startLine="86" valueReference="1084" variability="continuous">
+    <Real fixed="false" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable alias="noAlias" causality="internal" classIndex="77" classType="rAlg" description="velocity of satellite relative to sration (km/s)" endColumn="74" endLine="86" fileName="/home/arvin/Documents/Uni_4/ENG4350/4Tracking/OMdirectory/SatTrak.mo" fileWritable="true" hideResult="false" isDiscrete="false" isProtected="false" isValueChangeable="false" name="v_sat_topo[2]" startColumn="5" startLine="86" valueReference="1085" variability="continuous">
+    <Real fixed="false" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable alias="noAlias" causality="internal" classIndex="78" classType="rAlg" description="velocity of satellite relative to sration (km/s)" endColumn="74" endLine="86" fileName="/home/arvin/Documents/Uni_4/ENG4350/4Tracking/OMdirectory/SatTrak.mo" fileWritable="true" hideResult="false" isDiscrete="false" isProtected="false" isValueChangeable="false" name="v_sat_topo[3]" startColumn="5" startLine="86" valueReference="1086" variability="continuous">
+    <Real fixed="false" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable alias="noAlias" causality="internal" classIndex="79" classType="rAlg" description="Acqu of signal Time (epoch s)" endColumn="45" endLine="99" fileName="/home/arvin/Documents/Uni_4/ENG4350/4Tracking/OMdirectory/SatTrak.mo" fileWritable="true" hideResult="false" isDiscrete="true" isProtected="false" isValueChangeable="false" name="AOS" startColumn="5" startLine="99" valueReference="1087" variability="discrete">
+    <Real fixed="false" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable alias="noAlias" causality="internal" classIndex="80" classType="rAlg" description="Loss of signal Time (epoch s)" endColumn="45" endLine="100" fileName="/home/arvin/Documents/Uni_4/ENG4350/4Tracking/OMdirectory/SatTrak.mo" fileWritable="true" hideResult="false" isDiscrete="true" isProtected="false" isValueChangeable="false" name="LOS" startColumn="5" startLine="100" valueReference="1088" variability="discrete">
+    <Real fixed="false" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable alias="noAlias" causality="internal" classIndex="0" classType="rPar" description="Mean anomaly at Epoch (deg)" endColumn="52" endLine="7" fileName="/home/arvin/Documents/Uni_4/ENG4350/4Tracking/OMdirectory/SatTrak.mo" fileWritable="true" hideResult="false" isDiscrete="true" isProtected="false" isValueChangeable="true" name="SatTestP1.M0" startColumn="5" startLine="7" valueReference="1089" variability="parameter">
+    <Real fixed="true" start="140.7849" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable alias="noAlias" causality="internal" classIndex="1" classType="rPar" description="Mean motion at Epoch (rev/d)" endColumn="53" endLine="8" fileName="/home/arvin/Documents/Uni_4/ENG4350/4Tracking/OMdirectory/SatTrak.mo" fileWritable="true" hideResult="false" isDiscrete="true" isProtected="false" isValueChangeable="true" name="SatTestP1.N0" startColumn="5" startLine="8" valueReference="1090" variability="parameter">
+    <Real fixed="true" start="2.00574048" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable alias="noAlias" causality="internal" classIndex="2" classType="rPar" description="2nd Der Mean Motion over 6 (rev/d3)" endColumn="64" endLine="11" fileName="/home/arvin/Documents/Uni_4/ENG4350/4Tracking/OMdirectory/SatTrak.mo" fileWritable="true" hideResult="false" isDiscrete="true" isProtected="false" isValueChangeable="true" name="SatTestP1.Nddot6" startColumn="5" startLine="11" valueReference="1091" variability="parameter">
+    <Real fixed="true" start="0.0" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable alias="noAlias" causality="internal" classIndex="3" classType="rPar" description="1st Der Mean Motion over 2 (rev/d2)" endColumn="63" endLine="10" fileName="/home/arvin/Documents/Uni_4/ENG4350/4Tracking/OMdirectory/SatTrak.mo" fileWritable="true" hideResult="false" isDiscrete="true" isProtected="false" isValueChangeable="true" name="SatTestP1.Ndot2" startColumn="5" startLine="10" valueReference="1092" variability="parameter">
+    <Real fixed="true" start="1.4e-07" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable alias="noAlias" causality="internal" classIndex="4" classType="rPar" description="Argument of Perigee at Epoch (deg)" endColumn="64" endLine="13" fileName="/home/arvin/Documents/Uni_4/ENG4350/4Tracking/OMdirectory/SatTrak.mo" fileWritable="true" hideResult="false" isDiscrete="true" isProtected="false" isValueChangeable="true" name="SatTestP1.argper0" startColumn="5" startLine="13" valueReference="1093" variability="parameter">
+    <Real fixed="true" start="219.0525" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable alias="noAlias" causality="internal" classIndex="5" classType="rPar" description="Eccentricity" endColumn="39" endLine="9" fileName="/home/arvin/Documents/Uni_4/ENG4350/4Tracking/OMdirectory/SatTrak.mo" fileWritable="true" hideResult="false" isDiscrete="true" isProtected="false" isValueChangeable="true" name="SatTestP1.eccn" startColumn="5" startLine="9" valueReference="1094" variability="parameter">
+    <Real fixed="true" start="0.003116" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable alias="noAlias" causality="internal" classIndex="6" classType="rPar" description="Inclination angle (deg)" endColumn="50" endLine="14" fileName="/home/arvin/Documents/Uni_4/ENG4350/4Tracking/OMdirectory/SatTrak.mo" fileWritable="true" hideResult="false" isDiscrete="true" isProtected="false" isValueChangeable="true" name="SatTestP1.incl" startColumn="5" startLine="14" valueReference="1095" variability="parameter">
+    <Real fixed="true" start="54.8188" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable alias="noAlias" causality="internal" classIndex="7" classType="rPar" description="Right Ascension Ascending Node at Epoch (deg)" endColumn="73" endLine="12" fileName="/home/arvin/Documents/Uni_4/ENG4350/4Tracking/OMdirectory/SatTrak.mo" fileWritable="true" hideResult="false" isDiscrete="true" isProtected="false" isValueChangeable="true" name="SatTestP1.raan0" startColumn="5" startLine="12" valueReference="1096" variability="parameter">
+    <Real fixed="true" start="192.8599" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable alias="noAlias" causality="internal" classIndex="8" classType="rPar" description="Time from ref epoch to start of sim (sec)" endColumn="70" endLine="15" fileName="/home/arvin/Documents/Uni_4/ENG4350/4Tracking/OMdirectory/SatTrak.mo" fileWritable="true" hideResult="false" isDiscrete="true" isProtected="false" isValueChangeable="true" name="SatTestP1.tstart" startColumn="5" startLine="15" valueReference="1097" variability="parameter">
+    <Real fixed="true" start="1186251.25567317" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable alias="noAlias" causality="internal" classIndex="9" classType="rPar" description="Station elevation (m)" endColumn="52" endLine="162" fileName="/home/arvin/Documents/Uni_4/ENG4350/4Tracking/OMdirectory/SatTrak.mo" fileWritable="true" hideResult="false" isDiscrete="true" isProtected="false" isValueChangeable="true" name="SatTestP2.stn_elev" startColumn="5" startLine="162" valueReference="1098" variability="parameter">
+    <Real fixed="true" start="260.42" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable alias="noAlias" causality="internal" classIndex="10" classType="rPar" description="Station latitude (degN)" endColumn="53" endLine="161" fileName="/home/arvin/Documents/Uni_4/ENG4350/4Tracking/OMdirectory/SatTrak.mo" fileWritable="true" hideResult="false" isDiscrete="true" isProtected="false" isValueChangeable="true" name="SatTestP2.stn_lat" startColumn="5" startLine="161" valueReference="1099" variability="parameter">
+    <Real fixed="true" start="45.95550333333333" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable alias="noAlias" causality="internal" classIndex="11" classType="rPar" description="Station longitude (degE)" endColumn="55" endLine="160" fileName="/home/arvin/Documents/Uni_4/ENG4350/4Tracking/OMdirectory/SatTrak.mo" fileWritable="true" hideResult="false" isDiscrete="true" isProtected="false" isValueChangeable="true" name="SatTestP2.stn_long" startColumn="5" startLine="160" valueReference="1100" variability="parameter">
+    <Real fixed="true" start="281.9269597222222" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable alias="noAlias" causality="internal" classIndex="12" classType="rPar" description="Number of days from J2000 to midnight of epoch day" endColumn="76" endLine="66" fileName="/home/arvin/Documents/Uni_4/ENG4350/4Tracking/OMdirectory/SatTrak.mo" fileWritable="true" hideResult="false" isDiscrete="true" isProtected="false" isValueChangeable="true" name="day" startColumn="5" startLine="66" valueReference="1101" variability="parameter">
+    <Real fixed="true" start="7073.0" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable alias="noAlias" causality="internal" classIndex="13" classType="rPar" description="dayfraction at starting epoch" endColumn="57" endLine="65" fileName="/home/arvin/Documents/Uni_4/ENG4350/4Tracking/OMdirectory/SatTrak.mo" fileWritable="true" hideResult="false" isDiscrete="true" isProtected="false" isValueChangeable="true" name="hour0" startColumn="5" startLine="65" valueReference="1102" variability="parameter">
+    <Real fixed="true" start="0.5208333334885538" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable alias="alias" aliasVariable="SatTestP1.N" causality="internal" classIndex="0" classType="rAli" description="Mean Motion (rev/d)" endColumn="33" endLine="68" fileName="/home/arvin/Documents/Uni_4/ENG4350/4Tracking/OMdirectory/SatTrak.mo" fileWritable="true" hideResult="false" isDiscrete="false" isProtected="false" isValueChangeable="false" name="N" startColumn="5" startLine="68" valueReference="1103" variability="continuous">
+    <Real fixed="false" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable alias="alias" aliasVariable="E" causality="internal" classIndex="1" classType="rAli" description="Eccentric Anomaly (deg)" endColumn="37" endLine="18" fileName="/home/arvin/Documents/Uni_4/ENG4350/4Tracking/OMdirectory/SatTrak.mo" fileWritable="true" hideResult="false" isDiscrete="false" isProtected="false" isValueChangeable="false" name="SatTestP1.E" startColumn="5" startLine="18" valueReference="1104" variability="continuous">
+    <Real fixed="false" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable alias="alias" aliasVariable="r" causality="internal" classIndex="2" classType="rAli" description="Satellite radial distance (km)" endColumn="44" endLine="24" fileName="/home/arvin/Documents/Uni_4/ENG4350/4Tracking/OMdirectory/SatTrak.mo" fileWritable="true" hideResult="false" isDiscrete="false" isProtected="false" isValueChangeable="false" name="SatTestP1.r" startColumn="5" startLine="24" valueReference="1105" variability="continuous">
+    <Real fixed="false" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable alias="alias" aliasVariable="rotang[1]" causality="internal" classIndex="3" classType="rAli" description="TODO: fill in the angles here" endColumn="51" endLine="25" fileName="/home/arvin/Documents/Uni_4/ENG4350/4Tracking/OMdirectory/SatTrak.mo" fileWritable="true" hideResult="false" isDiscrete="false" isProtected="false" isValueChangeable="false" name="SatTestP1.rotang[1]" startColumn="5" startLine="25" valueReference="1106" variability="continuous">
+    <Real fixed="false" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable alias="alias" aliasVariable="rotang[3]" causality="internal" classIndex="4" classType="rAli" description="TODO: fill in the angles here" endColumn="51" endLine="25" fileName="/home/arvin/Documents/Uni_4/ENG4350/4Tracking/OMdirectory/SatTrak.mo" fileWritable="true" hideResult="false" isDiscrete="false" isProtected="false" isValueChangeable="false" name="SatTestP1.rotang[3]" startColumn="5" startLine="25" valueReference="1107" variability="continuous">
+    <Real fixed="false" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable alias="alias" aliasVariable="theta" causality="internal" classIndex="5" classType="rAli" description="true anomaly (deg)" endColumn="36" endLine="19" fileName="/home/arvin/Documents/Uni_4/ENG4350/4Tracking/OMdirectory/SatTrak.mo" fileWritable="true" hideResult="false" isDiscrete="false" isProtected="false" isValueChangeable="false" name="SatTestP1.theta" startColumn="5" startLine="19" valueReference="1108" variability="continuous">
+    <Real fixed="false" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable alias="alias" aliasVariable="v_sat_pf[1]" causality="internal" classIndex="6" classType="rAli" description="Satellite vel in pf coords (km/s)" endColumn="57" endLine="27" fileName="/home/arvin/Documents/Uni_4/ENG4350/4Tracking/OMdirectory/SatTrak.mo" fileWritable="true" hideResult="false" isDiscrete="false" isProtected="false" isValueChangeable="false" name="SatTestP1.v_sat_pf[1]" startColumn="5" startLine="27" valueReference="1109" variability="continuous">
+    <Real fixed="false" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable alias="alias" aliasVariable="v_sat_pf[2]" causality="internal" classIndex="7" classType="rAli" description="Satellite vel in pf coords (km/s)" endColumn="57" endLine="27" fileName="/home/arvin/Documents/Uni_4/ENG4350/4Tracking/OMdirectory/SatTrak.mo" fileWritable="true" hideResult="false" isDiscrete="false" isProtected="false" isValueChangeable="false" name="SatTestP1.v_sat_pf[2]" startColumn="5" startLine="27" valueReference="1110" variability="continuous">
+    <Real fixed="false" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable alias="alias" aliasVariable="v_sat_pf[3]" causality="internal" classIndex="8" classType="rAli" description="Satellite vel in pf coords (km/s)" endColumn="57" endLine="27" fileName="/home/arvin/Documents/Uni_4/ENG4350/4Tracking/OMdirectory/SatTrak.mo" fileWritable="true" hideResult="false" isDiscrete="false" isProtected="false" isValueChangeable="false" name="SatTestP1.v_sat_pf[3]" startColumn="5" startLine="27" valueReference="1111" variability="continuous">
+    <Real fixed="false" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable alias="alias" aliasVariable="TM[1,1]" causality="internal" classIndex="9" classType="rAli" description="Transform matrix from ECF to topo" endColumn="54" endLine="166" fileName="/home/arvin/Documents/Uni_4/ENG4350/4Tracking/OMdirectory/SatTrak.mo" fileWritable="true" hideResult="false" isDiscrete="false" isProtected="false" isValueChangeable="false" name="SatTestP2.TM[1,1]" startColumn="5" startLine="166" valueReference="1112" variability="continuous">
+    <Real fixed="false" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable alias="alias" aliasVariable="TM[1,2]" causality="internal" classIndex="10" classType="rAli" description="Transform matrix from ECF to topo" endColumn="54" endLine="166" fileName="/home/arvin/Documents/Uni_4/ENG4350/4Tracking/OMdirectory/SatTrak.mo" fileWritable="true" hideResult="false" isDiscrete="false" isProtected="false" isValueChangeable="false" name="SatTestP2.TM[1,2]" startColumn="5" startLine="166" valueReference="1113" variability="continuous">
+    <Real fixed="false" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable alias="alias" aliasVariable="TM[1,3]" causality="internal" classIndex="11" classType="rAli" description="Transform matrix from ECF to topo" endColumn="54" endLine="166" fileName="/home/arvin/Documents/Uni_4/ENG4350/4Tracking/OMdirectory/SatTrak.mo" fileWritable="true" hideResult="false" isDiscrete="false" isProtected="false" isValueChangeable="false" name="SatTestP2.TM[1,3]" startColumn="5" startLine="166" valueReference="1114" variability="continuous">
+    <Real fixed="false" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable alias="alias" aliasVariable="TM[2,1]" causality="internal" classIndex="12" classType="rAli" description="Transform matrix from ECF to topo" endColumn="54" endLine="166" fileName="/home/arvin/Documents/Uni_4/ENG4350/4Tracking/OMdirectory/SatTrak.mo" fileWritable="true" hideResult="false" isDiscrete="false" isProtected="false" isValueChangeable="false" name="SatTestP2.TM[2,1]" startColumn="5" startLine="166" valueReference="1115" variability="continuous">
+    <Real fixed="false" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable alias="alias" aliasVariable="TM[2,2]" causality="internal" classIndex="13" classType="rAli" description="Transform matrix from ECF to topo" endColumn="54" endLine="166" fileName="/home/arvin/Documents/Uni_4/ENG4350/4Tracking/OMdirectory/SatTrak.mo" fileWritable="true" hideResult="false" isDiscrete="false" isProtected="false" isValueChangeable="false" name="SatTestP2.TM[2,2]" startColumn="5" startLine="166" valueReference="1116" variability="continuous">
+    <Real fixed="false" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable alias="alias" aliasVariable="TM[2,3]" causality="internal" classIndex="14" classType="rAli" description="Transform matrix from ECF to topo" endColumn="54" endLine="166" fileName="/home/arvin/Documents/Uni_4/ENG4350/4Tracking/OMdirectory/SatTrak.mo" fileWritable="true" hideResult="false" isDiscrete="false" isProtected="false" isValueChangeable="false" name="SatTestP2.TM[2,3]" startColumn="5" startLine="166" valueReference="1117" variability="continuous">
+    <Real fixed="false" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable alias="alias" aliasVariable="TM[3,1]" causality="internal" classIndex="15" classType="rAli" description="Transform matrix from ECF to topo" endColumn="54" endLine="166" fileName="/home/arvin/Documents/Uni_4/ENG4350/4Tracking/OMdirectory/SatTrak.mo" fileWritable="true" hideResult="false" isDiscrete="false" isProtected="false" isValueChangeable="false" name="SatTestP2.TM[3,1]" startColumn="5" startLine="166" valueReference="1118" variability="continuous">
+    <Real fixed="false" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable alias="alias" aliasVariable="TM[3,2]" causality="internal" classIndex="16" classType="rAli" description="Transform matrix from ECF to topo" endColumn="54" endLine="166" fileName="/home/arvin/Documents/Uni_4/ENG4350/4Tracking/OMdirectory/SatTrak.mo" fileWritable="true" hideResult="false" isDiscrete="false" isProtected="false" isValueChangeable="false" name="SatTestP2.TM[3,2]" startColumn="5" startLine="166" valueReference="1119" variability="continuous">
+    <Real fixed="false" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable alias="alias" aliasVariable="TM[3,3]" causality="internal" classIndex="17" classType="rAli" description="Transform matrix from ECF to topo" endColumn="54" endLine="166" fileName="/home/arvin/Documents/Uni_4/ENG4350/4Tracking/OMdirectory/SatTrak.mo" fileWritable="true" hideResult="false" isDiscrete="false" isProtected="false" isValueChangeable="false" name="SatTestP2.TM[3,3]" startColumn="5" startLine="166" valueReference="1120" variability="continuous">
+    <Real fixed="false" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable alias="alias" aliasVariable="p_stn_ECF[1]" causality="internal" classIndex="18" classType="rAli" description="Station coordinates in ECF (km)" endColumn="56" endLine="163" fileName="/home/arvin/Documents/Uni_4/ENG4350/4Tracking/OMdirectory/SatTrak.mo" fileWritable="true" hideResult="false" isDiscrete="false" isProtected="false" isValueChangeable="false" name="SatTestP2.p_stn_ECF[1]" startColumn="5" startLine="163" valueReference="1121" variability="continuous">
+    <Real fixed="false" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable alias="alias" aliasVariable="p_stn_ECF[2]" causality="internal" classIndex="19" classType="rAli" description="Station coordinates in ECF (km)" endColumn="56" endLine="163" fileName="/home/arvin/Documents/Uni_4/ENG4350/4Tracking/OMdirectory/SatTrak.mo" fileWritable="true" hideResult="false" isDiscrete="false" isProtected="false" isValueChangeable="false" name="SatTestP2.p_stn_ECF[2]" startColumn="5" startLine="163" valueReference="1122" variability="continuous">
+    <Real fixed="false" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable alias="alias" aliasVariable="p_stn_ECF[3]" causality="internal" classIndex="20" classType="rAli" description="Station coordinates in ECF (km)" endColumn="56" endLine="163" fileName="/home/arvin/Documents/Uni_4/ENG4350/4Tracking/OMdirectory/SatTrak.mo" fileWritable="true" hideResult="false" isDiscrete="false" isProtected="false" isValueChangeable="false" name="SatTestP2.p_stn_ECF[3]" startColumn="5" startLine="163" valueReference="1123" variability="continuous">
+    <Real fixed="false" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable alias="alias" aliasVariable="p_stn_topo[1]" causality="internal" classIndex="21" classType="rAli" description="Station coordinates in topocentric (km)" endColumn="64" endLine="164" fileName="/home/arvin/Documents/Uni_4/ENG4350/4Tracking/OMdirectory/SatTrak.mo" fileWritable="true" hideResult="false" isDiscrete="false" isProtected="false" isValueChangeable="false" name="SatTestP2.p_stn_top[1]" startColumn="5" startLine="164" valueReference="1124" variability="continuous">
+    <Real fixed="false" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable alias="alias" aliasVariable="p_stn_topo[2]" causality="internal" classIndex="22" classType="rAli" description="Station coordinates in topocentric (km)" endColumn="64" endLine="164" fileName="/home/arvin/Documents/Uni_4/ENG4350/4Tracking/OMdirectory/SatTrak.mo" fileWritable="true" hideResult="false" isDiscrete="false" isProtected="false" isValueChangeable="false" name="SatTestP2.p_stn_top[2]" startColumn="5" startLine="164" valueReference="1125" variability="continuous">
+    <Real fixed="false" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable alias="alias" aliasVariable="p_stn_topo[3]" causality="internal" classIndex="23" classType="rAli" description="Station coordinates in topocentric (km)" endColumn="64" endLine="164" fileName="/home/arvin/Documents/Uni_4/ENG4350/4Tracking/OMdirectory/SatTrak.mo" fileWritable="true" hideResult="false" isDiscrete="false" isProtected="false" isValueChangeable="false" name="SatTestP2.p_stn_top[3]" startColumn="5" startLine="164" valueReference="1126" variability="continuous">
+    <Real fixed="false" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable alias="alias" aliasVariable="SatTestP1.a" causality="internal" classIndex="24" classType="rAli" description="Semi-major axis (km)" endColumn="34" endLine="72" fileName="/home/arvin/Documents/Uni_4/ENG4350/4Tracking/OMdirectory/SatTrak.mo" fileWritable="true" hideResult="false" isDiscrete="false" isProtected="false" isValueChangeable="false" name="a" startColumn="5" startLine="72" valueReference="1127" variability="continuous">
+    <Real fixed="false" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable alias="alias" aliasVariable="SatTestP1.argper" causality="internal" classIndex="25" classType="rAli" description="Argument of Perigee (deg)" endColumn="44" endLine="74" fileName="/home/arvin/Documents/Uni_4/ENG4350/4Tracking/OMdirectory/SatTrak.mo" fileWritable="true" hideResult="false" isDiscrete="false" isProtected="false" isValueChangeable="false" name="argper" startColumn="5" startLine="74" valueReference="1128" variability="continuous">
+    <Real fixed="false" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable alias="alias" aliasVariable="SatTestP1.incl" causality="internal" classIndex="26" classType="rAli" description="inclination (deg)" endColumn="34" endLine="71" fileName="/home/arvin/Documents/Uni_4/ENG4350/4Tracking/OMdirectory/SatTrak.mo" fileWritable="true" hideResult="false" isDiscrete="false" isProtected="false" isValueChangeable="false" name="incl" startColumn="5" startLine="71" valueReference="1129" variability="continuous">
+    <Real fixed="false" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable alias="alias" aliasVariable="SatTestP1.p_sat_pf[1]" causality="internal" classIndex="27" classType="rAli" description="Satellite posn in pf coords (km)" endColumn="56" endLine="76" fileName="/home/arvin/Documents/Uni_4/ENG4350/4Tracking/OMdirectory/SatTrak.mo" fileWritable="true" hideResult="false" isDiscrete="false" isProtected="false" isValueChangeable="false" name="p_sat_pf[1]" startColumn="5" startLine="76" valueReference="1130" variability="continuous">
+    <Real fixed="false" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable alias="alias" aliasVariable="SatTestP1.p_sat_pf[2]" causality="internal" classIndex="28" classType="rAli" description="Satellite posn in pf coords (km)" endColumn="56" endLine="76" fileName="/home/arvin/Documents/Uni_4/ENG4350/4Tracking/OMdirectory/SatTrak.mo" fileWritable="true" hideResult="false" isDiscrete="false" isProtected="false" isValueChangeable="false" name="p_sat_pf[2]" startColumn="5" startLine="76" valueReference="1131" variability="continuous">
+    <Real fixed="false" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable alias="alias" aliasVariable="SatTestP1.p_sat_pf[3]" causality="internal" classIndex="29" classType="rAli" description="Satellite posn in pf coords (km)" endColumn="56" endLine="76" fileName="/home/arvin/Documents/Uni_4/ENG4350/4Tracking/OMdirectory/SatTrak.mo" fileWritable="true" hideResult="false" isDiscrete="false" isProtected="false" isValueChangeable="false" name="p_sat_pf[3]" startColumn="5" startLine="76" valueReference="1132" variability="continuous">
+    <Real fixed="false" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable alias="alias" aliasVariable="SatTestP1.raan" causality="internal" classIndex="30" classType="rAli" description="Right Ascension Ascending Node (deg)" endColumn="53" endLine="73" fileName="/home/arvin/Documents/Uni_4/ENG4350/4Tracking/OMdirectory/SatTrak.mo" fileWritable="true" hideResult="false" isDiscrete="false" isProtected="false" isValueChangeable="false" name="raan" startColumn="5" startLine="73" valueReference="1133" variability="continuous">
+    <Real fixed="false" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable alias="alias" aliasVariable="SatTestP1.rotang[2]" causality="internal" classIndex="31" classType="rAli" description="Rotation Angles" endColumn="37" endLine="78" fileName="/home/arvin/Documents/Uni_4/ENG4350/4Tracking/OMdirectory/SatTrak.mo" fileWritable="true" hideResult="false" isDiscrete="false" isProtected="false" isValueChangeable="false" name="rotang[2]" startColumn="5" startLine="78" valueReference="1134" variability="continuous">
+    <Real fixed="false" useNominal="false" />
+  </ScalarVariable>
+  <ScalarVariable alias="noAlias" causality="internal" classIndex="0" classType="iAlg" endColumn="0" endLine="0" fileName="" fileWritable="true" hideResult="false" isDiscrete="true" isProtected="false" isValueChangeable="false" name="$STATESET1.A[1]" startColumn="0" startLine="0" valueReference="1135" variability="continuous">
+    <Integer fixed="true" start="1" />
+  </ScalarVariable>
+  <ScalarVariable alias="noAlias" causality="internal" classIndex="1" classType="iAlg" endColumn="0" endLine="0" fileName="" fileWritable="true" hideResult="false" isDiscrete="true" isProtected="false" isValueChangeable="false" name="$STATESET1.A[2]" startColumn="0" startLine="0" valueReference="1136" variability="continuous">
+    <Integer fixed="true" start="0" />
+  </ScalarVariable>
+  <ScalarVariable alias="noAlias" causality="internal" classIndex="2" classType="iAlg" description="rotation matrix sequence" endColumn="46" endLine="167" fileName="/home/arvin/Documents/Uni_4/ENG4350/4Tracking/OMdirectory/SatTrak.mo" fileWritable="true" hideResult="false" isDiscrete="true" isProtected="false" isValueChangeable="false" name="SatTestP2.seq[1]" startColumn="5" startLine="167" valueReference="1137" variability="discrete">
+    <Integer fixed="true" />
+  </ScalarVariable>
+  <ScalarVariable alias="noAlias" causality="internal" classIndex="3" classType="iAlg" description="rotation matrix sequence" endColumn="46" endLine="167" fileName="/home/arvin/Documents/Uni_4/ENG4350/4Tracking/OMdirectory/SatTrak.mo" fileWritable="true" hideResult="false" isDiscrete="true" isProtected="false" isValueChangeable="false" name="SatTestP2.seq[2]" startColumn="5" startLine="167" valueReference="1138" variability="discrete">
+    <Integer fixed="true" />
+  </ScalarVariable>
+  <ScalarVariable alias="noAlias" causality="internal" classIndex="4" classType="iAlg" description="rotation matrix sequence" endColumn="46" endLine="167" fileName="/home/arvin/Documents/Uni_4/ENG4350/4Tracking/OMdirectory/SatTrak.mo" fileWritable="true" hideResult="false" isDiscrete="true" isProtected="false" isValueChangeable="false" name="SatTestP2.seq[3]" startColumn="5" startLine="167" valueReference="1139" variability="discrete">
+    <Integer fixed="true" />
+  </ScalarVariable>
+  <ScalarVariable alias="noAlias" causality="internal" classIndex="0" classType="bAlg" description="OutsideFOR and not pre(OutsideFOR)" endColumn="43" endLine="149" fileName="/home/arvin/Documents/Uni_4/ENG4350/4Tracking/OMdirectory/SatTrak.mo" fileWritable="true" hideResult="true" isDiscrete="true" isProtected="true" isValueChangeable="false" name="$whenCondition1" startColumn="7" startLine="149" valueReference="1140" variability="discrete">
+    <Boolean fixed="true" />
+  </ScalarVariable>
+  <ScalarVariable alias="noAlias" causality="internal" classIndex="1" classType="bAlg" description="InsideFOR and not pre(InsideFOR)" endColumn="44" endLine="146" fileName="/home/arvin/Documents/Uni_4/ENG4350/4Tracking/OMdirectory/SatTrak.mo" fileWritable="true" hideResult="true" isDiscrete="true" isProtected="true" isValueChangeable="false" name="$whenCondition2" startColumn="7" startLine="146" valueReference="1141" variability="discrete">
+    <Boolean fixed="true" />
+  </ScalarVariable>
+  <ScalarVariable alias="noAlias" causality="internal" classIndex="2" classType="bAlg" description="Satellite is within FOR" endColumn="48" endLine="101" fileName="/home/arvin/Documents/Uni_4/ENG4350/4Tracking/OMdirectory/SatTrak.mo" fileWritable="true" hideResult="false" isDiscrete="true" isProtected="false" isValueChangeable="false" name="InsideFOR" startColumn="5" startLine="101" valueReference="1142" variability="discrete">
+    <Boolean fixed="false" />
+  </ScalarVariable>
+  <ScalarVariable alias="noAlias" causality="internal" classIndex="3" classType="bAlg" description="Satellite is outside FOR (Logic Inverse of InsideFOR)" endColumn="79" endLine="102" fileName="/home/arvin/Documents/Uni_4/ENG4350/4Tracking/OMdirectory/SatTrak.mo" fileWritable="true" hideResult="false" isDiscrete="true" isProtected="false" isValueChangeable="false" name="OutsideFOR" startColumn="5" startLine="102" valueReference="1143" variability="discrete">
+    <Boolean fixed="false" />
+  </ScalarVariable>
+
+
+
+  </ModelVariables>
+
+
+</fmiModelDescription>
